@@ -1,0 +1,69 @@
+{
+  "App": {
+    "name": "CTU AI Application",
+    "description": "Version {version}",
+    "altLogo": "CTU Logo",
+    "locale": "{locale, select, vi {🇻🇳 Tiếng Việt} en {🇺🇸 English} other {Unknown}}",
+    "language": "Language",
+    "about": "About",
+    "home": "Home"
+  },
+  "Organization": {
+    "name": "CTU"
+  },
+  "Manifest": {
+    "name": "CTU AI Application"
+  },
+  "About": {
+    "aboutProject": "About project",
+    "title": "Celebrating 60 Years of Can Tho University (1966-2026)",
+    "content": "---\n## 1. Our Inspiration\nThis application is part of the celebration for the **60th anniversary of Can Tho University**. For six decades, CTU has been a center of knowledge and growth. In that same spirit, we built this application to allow the community to learn about the university's memorable historical milestones, while also providing an exciting tool for generating images and videos.\n\n## 2. Powered by Open Source\nWe believe that technology should be transparent and shared, much like the education provided at our university. To build this app, we used **\"Open-Source\"** models. This means that the \"blueprints\" of these models and tools have been shared for free by researchers around the world.\n\nOur system is powered by the following open-source technologies:\n* **GPT-OSS 20B** (Apache 2.0 License)\n* **DeepSeek R1 8B** (MIT License)\n* **Qwen Image Edit** (Apache 2.0 License)\n* **Wan 2.2** (Apache 2.0 License)\n* *Supported by various open-source libraries.*\n---",
+    "happyAnniversary": "Happy 60th Anniversary, CTU! 🎉"
+  },
+  "Global": {
+    "loading": "Loading",
+    "page": "Page",
+    "maxFiles": "The maximum of total files is {max}",
+    "maxFileSize": "The maximum of file size is {size}",
+    "select": "Select",
+    "serviceUnavailable": "Service is unavailable. Please try again later.",
+    "unknownError": "An unexpected error has occurred. Please try again later.",
+    "image": "Image",
+    "text": "Text",
+    "useModel": "Use model",
+    "template": "Template",
+    "maintainFunction": "This feature is currently being maintained.",
+    "aborted": "Aborted"
+  },
+  "Chat": {
+    "generateImage": "Generate image",
+    "generateVideo": "Generate video",
+    "contentWarning": "This application utilizes open-source models.",
+    "defaultInput": "Send with attachments",
+    "promptInputPlaceholder": "What would you like to know?",
+    "templatePromptInputPlaceholder": "Please describe the character you'd like to create within this scene",
+    "addAttachments": "Add attachments",
+    "createImage": "Create image",
+    "retry": "Retry",
+    "copy": "Copy",
+    "download": "Download",
+    "templateDialogTitle": "Image template",
+    "templateDialogDescription": "Select template to create an image",
+    "selectTemplate": "Select image template",
+    "beforeReceivedPromptId": "Analyzing your request...",
+    "afterReceivedPromptId": "Request analyzed. Generating content...",
+    "generateImageError": "Cannot finish your request because of an error. Please try again later.",
+    "generateVideoError": "Cannot finish your request because of an error. Please try again later.",
+    "selectedTemplate": "Selected template",
+    "noSelectedTemplate": "You have not selected any template yet. Please select one.",
+    "send": "Send",
+    "requesting": "Requesting",
+    "progress": "Progress",
+    "finished": "Finished",
+    "mediaPollingError": "An error occurred",
+    "thinking": "Thinking",
+    "thoughtForSeconds": "Thought for {duration} seconds",
+    "thoughtForFewSeconds": "Thought for a few seconds",
+    "preprompImageEdit": "Extract the person from image 1 and composite them naturally into the background of image 2"
+  }
+}

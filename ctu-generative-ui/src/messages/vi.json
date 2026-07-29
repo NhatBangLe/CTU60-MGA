@@ -1,0 +1,69 @@
+{
+  "App": {
+    "name": "CTU AI Application",
+    "description": "Phiên bản {version}",
+    "altLogo": "CTU Logo",
+    "locale": "{locale, select, vi {🇻🇳 Tiếng Việt} en {🇺🇸 English} other {Unknown}}",
+    "language": "Ngôn ngữ",
+    "about": "Về dự án",
+    "home": "Trang chủ"
+  },
+  "Organization": {
+    "name": "CTU"
+  },
+  "Manifest": {
+    "name": "CTU AI Application"
+  },
+  "About": {
+    "aboutProject": "Về dự án",
+    "title": "Chào mừng Kỷ niệm 60 năm Thành lập Trường Đại học Cần Thơ (1966-2026)",
+    "content": "---\n\n## 1. Nguồn cảm hứng của chúng tôi\nỨng dụng này là một phần trong kỷ niệm **60 năm ngày thành lập Trường Đại học Cần Thơ**. Trong suốt sáu thập kỷ qua, Đại học Cần Thơ luôn là trung tâm của tri thức và sự phát triển. Với cùng tinh thần đó, chúng tôi xây dựng ứng dụng này nhằm mang đến một nguồn tư liệu mới có thể giúp mọi người tìm hiểu về dấu mốc lịch sử đáng nhớ của trường, đồng thời mang đến một công cụ tạo ảnh, video thú vị.\n\n## 2. Phát triển với Mã nguồn mở\nChúng tôi tin rằng công nghệ nên minh bạch và được chia sẻ rộng rãi, tương tự như giá trị giáo dục tại trường của chúng ta. Để xây dựng ứng dụng này, chúng tôi đã sử dụng các mô hình **\"Mã nguồn mở\" (Open-Source)**. Điều này có nghĩa là \"bản thiết kế\" của các mô hình, công cụ này đã được các nhà nghiên cứu trên toàn thế giới chia sẻ miễn phí.\n\nHệ thống của chúng tôi được vận hành bởi các công nghệ mã nguồn mở sau:\n* **GPT-OSS 20B** (Giấy phép Apache 2.0)\n* **DeepSeek R1 8B** (Giấy phép MIT)\n* **Qwen Image Edit** (Giấy phép Apache 2.0)\n* **Wan 2.2** (Giấy phép Apache 2.0)\n* *Được hỗ trợ bởi nhiều thư viện mã nguồn mở khác.*\n\n---",
+    "happyAnniversary": "Chúc mừng Kỷ niệm 60 năm thành lập CTU! 🎉"
+  },
+  "Global": {
+    "loading": "Đang tải",
+    "page": "Trang",
+    "maxFiles": "Số lượng tập tin tối đa {max}",
+    "maxFileSize": "Kích cỡ tập tin tối đa {size}",
+    "select": "Chọn",
+    "serviceUnavailable": "Dịch vụ không khả dụng. Vui lòng thử lại sau.",
+    "unknownError": "Đã xảy ra lỗi không mong muốn. Vui lòng thử lại sau.",
+    "image": "Ảnh",
+    "text": "Văn bản",
+    "useModel": "Sử dụng mô hình",
+    "template": "Mẫu",
+    "maintainFunction": "Tính năng đang được bảo trì, sẽ được hỗ trợ trở lại trong tương lai.",
+    "aborted": "Đã hủy"
+  },
+  "Chat": {
+    "generateImage": "Tạo ảnh",
+    "generateVideo": "Tạo video",
+    "contentWarning": "Sản phẩm này sử dụng các mô hình mã nguồn mở.",
+    "defaultInput": "Gửi với các đính kèm",
+    "promptInputPlaceholder": "Bạn cần tôi hỗ trợ gì?",
+    "templatePromptInputPlaceholder": "Hãy mô tả hình dáng nhân vật bạn muốn tạo với mẫu khung cảnh này",
+    "addAttachments": "Thêm đính kèm",
+    "createImage": "Tạo ảnh",
+    "retry": "Thử lại",
+    "copy": "Sao chép",
+    "download": "Tải về",
+    "templateDialogTitle": "Khung hình",
+    "templateDialogDescription": "Chọn khung hình để tạo ảnh",
+    "selectTemplate": "Chọn khung hình",
+    "beforeReceivedPromptId": "Ứng dụng đang phân tích yêu cầu của bạn.",
+    "afterReceivedPromptId": "Ứng dụng đã hoàn thành việc phân tích yêu cầu và đang trong quá trình tạo nội dung.",
+    "generateImageError": "Không thể hoàn thành việc tạo ảnh theo yêu cầu của bạn, vì đã xảy ra lỗi không mong muốn. Vui lòng thử lại sau.",
+    "generateVideoError": "Không thể hoàn thành việc tạo video theo yêu cầu của bạn, vì đã xảy ra lỗi không mong muốn. Vui lòng thử lại sau.",
+    "selectedTemplate": "Mẫu đã chọn",
+    "noSelectedTemplate": "Bạn chưa chọn bất kỳ khung cảnh nào. Vui lòng chọn một khung cảnh.",
+    "send": "Gửi",
+    "requesting": "Đang gửi yêu cầu",
+    "progress": "Tiến trình",
+    "finished": "Hoàn thành",
+    "mediaPollingError": "Đã xảy ra lỗi.",
+    "thinking": "Đang suy luận",
+    "thoughtForSeconds": "Hoàn thành suy luận trong {duration} giây",
+    "thoughtForFewSeconds": "Hoàn thành suy luận trong vài giây",
+    "preprompImageEdit": "Trích xuất người từ ảnh 1 và kết hợp chúng một cách tự nhiên vào trong khung cảnh của ảnh 2"
+  }
+}

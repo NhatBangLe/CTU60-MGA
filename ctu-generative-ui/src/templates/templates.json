@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ctu",
+    "name": "CTU",
+    "templates": [
+      {
+        "id": "ctu_1",
+        "name": "CTU ❤️ (1)",
+        "prompt": "Sử dụng ảnh ctu_1.jpg để làm khung cảnh chính.",
+        "image": {
+          "fileName": "ctu_1.jpg",
+          "mimeType": "image/jpeg",
+          "subfolder": "ctu"
+        }
+      },
+      {
+        "id": "ctu_2",
+        "name": "CTU ❤️ (2)",
+        "prompt": "Sử dụng ảnh ctu_2.jpg để làm khung cảnh chính.",
+        "image": {
+          "fileName": "ctu_2.jpg",
+          "mimeType": "image/jpeg",
+          "subfolder": "ctu"
+        }
+      },
+      {
+        "id": "ctu_3",
+        "name": "CTU ❤️ (3)",
+        "prompt": "Sử dụng ảnh ctu_3.jpg để làm khung cảnh chính.",
+        "image": {
+          "fileName": "ctu_3.jpg",
+          "mimeType": "image/jpeg",
+          "subfolder": "ctu"
+        }
+      },
+      {
+        "id": "ctu_4",
+        "name": "CTU ❤️ (4)",
+        "prompt": "Sử dụng ảnh ctu_4.jpg để làm khung cảnh chính.",
+        "image": {
+          "fileName": "ctu_4.jpg",
+          "mimeType": "image/jpeg",
+          "subfolder": "ctu"
+        }
+      }
+    ]
+  }
+]

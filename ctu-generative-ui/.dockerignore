@@ -1,0 +1,10 @@
+.vscode
+README.md
+.env.example
+.env
+.prettierrc
+.gitignore
+eslint.config.js
+.next
+node_modules
+*lock*
