@@ -1,0 +1,11 @@
+name: ctu-comfyui-api
+services:
+  comfyui-api:
+    image: nhatbangle/ctu-comfyui-api:latest
+    container_name: inst-1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    network_mode: 'host'

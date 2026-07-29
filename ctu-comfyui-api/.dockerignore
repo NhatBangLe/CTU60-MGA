@@ -1,0 +1,12 @@
+test
+storage
+node_modules
+dist
+.env*
+.gitignore
+.prettierrc
+*.lock
+*-lock.json
+README.md
+docker-compose.yml
+.vscode
