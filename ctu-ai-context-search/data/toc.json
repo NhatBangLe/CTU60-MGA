@@ -1,0 +1,650 @@
+[
+	{
+		"id": "7514e2f3-ead4-45ed-9d10-b592cb5e76bd",
+		"chapter": "PHẦN I: LỊCH SỬ HÌNH THÀNH VÀ PHÁT TRIỂN",
+		"parts": [
+			{
+				"id": "e8a1f734-6001-4c7a-8b8b-1a0a00000001",
+				"part": "1. Đại học vì đồng bằng - Đồng bằng vì đại học",
+				"questions": [
+					{
+						"id": "04d00280-e898-453e-848b-b951108ed81c",
+						"followUpIds": [
+							"bd7e1512-ac8b-44ef-99b0-7151aea1e3a4",
+							"920d883a-a13d-46ed-941d-b0ec10762ac6",
+							"0d5b09ed-73da-4d24-8d86-eb03d9aa6c21"
+						]
+					},
+					{
+						"id": "dbed6eaf-24d1-4579-b4aa-efc74ac3242f",
+						"followUpIds": [
+							"6be6614c-1df9-4c92-9e00-7aebca013284",
+							"3e67359f-fc43-4910-a152-5393e46abb67",
+							"dedd5646-176b-499e-b488-cb4bd99de288"
+						]
+					},
+					{
+						"id": "a00d0cce-50d3-48a7-807f-27b229ae3bb0",
+						"followUpIds": [
+							"72de9245-72ee-4bfc-8150-41fafd3c883a",
+							"7a4e103c-42fa-4a1d-8bb2-6c5501f167d1",
+							"e646db77-dd7b-441d-b85d-1b2442cfedc4"
+						]
+					}
+				]
+			},
+			{
+				"id": "e8a1f734-6001-4c7a-8b8b-1a0a00000002",
+				"part": "2. Vượt qua thử thách - Kiến tạo nền tảng",
+				"questions": [
+					{
+						"id": "f1948932-66f9-415a-9f55-657723a5cc77",
+						"followUpIds": [
+							"e0cb0e62-5558-4d31-ac1f-176679f937fc",
+							"084fd1d2-021c-4799-a18d-a5467d4e8a8b",
+							"39b62eec-3bb6-46bf-a267-ca88867c1d0e"
+						]
+					},
+					{
+						"id": "8d5be275-3fd3-44fe-b1d8-f4fbd29b9007",
+						"followUpIds": [
+							"9ce36500-5b20-485f-a1b0-1acec19648bd",
+							"55628513-d004-4286-bbf7-a5933d3a9789",
+							"89154c40-af56-4b90-9f7d-63609d13b9ff"
+						]
+					},
+					{
+						"id": "46d98b40-cbb6-49c8-a91c-a2c58e33c90c",
+						"followUpIds": [
+							"044dcd7e-a5cf-4353-9abf-05cda8af5f0c",
+							"cba48090-f6b9-4963-bf4a-7d360fc14ca5",
+							"873e5a7d-39a2-42e6-8661-6974c783f496"
+						]
+					}
+				]
+			},
+			{
+				"id": "e8a1f734-6001-4c7a-8b8b-1a0a00000003",
+				"part": "3. Phát huy nội lực - Mở rộng hội nhập",
+				"questions": [
+					{
+						"id": "9510aed8-5d24-429c-85fd-758dc1833d54",
+						"followUpIds": [
+							"53830e83-c716-4f2f-8aeb-09224fa2f1a9",
+							"a529cc6f-7b4d-4ff4-ab26-46f009846db7",
+							"e7aba63d-02be-4ac9-993e-ad0561890730"
+						]
+					},
+					{
+						"id": "15ed340e-8ab3-4945-9cdc-bc8a70b55e69",
+						"followUpIds": [
+							"865a326a-ca1b-4b42-bed9-3b777fa9a12c",
+							"b04ba8d1-5cec-4026-b472-b4ad54110bb4",
+							"0cb5a0f1-d690-4786-a292-c8ba7aeab074"
+						]
+					},
+					{
+						"id": "ab8f5dd5-0d48-4489-acf4-ec869d330ea2",
+						"followUpIds": [
+							"0da22567-e91f-4b33-aa45-69c05422e8b2",
+							"7ed26f85-f665-4947-9745-7ec11c832b5c",
+							"97db7337-50a9-4aa3-ac7e-4a9fbfebf255"
+						]
+					}
+				]
+			},
+			{
+				"id": "e8a1f734-6001-4c7a-8b8b-1a0a00000004",
+				"part": "4. Thập niên bứt phá - Khẳng định vị thế",
+				"questions": [
+					{
+						"id": "e4b9c595-ef58-4913-b921-e10569125494",
+						"followUpIds": [
+							"33bf3648-40b1-4765-bb71-404737d28c85",
+							"047247a6-f874-48ee-8dd3-c4be72086756",
+							"018c86e6-a83a-4f90-b03d-b7e3f83f28e3"
+						]
+					},
+					{
+						"id": "74c1577f-43ae-4fe7-b6c3-a35afb486a4d",
+						"followUpIds": [
+							"35cc3f9f-010d-46dd-b831-a0e88184ecd5",
+							"fd3b929c-6f22-4436-88c5-fb29fdb944a6",
+							"5085eadd-c9b0-4fd1-821e-e14847079015"
+						]
+					},
+					{
+						"id": "1fafe96a-2890-4686-980b-d71f26792ecb",
+						"followUpIds": [
+							"8203fa17-4476-4fd6-a3fb-5d30c214f441",
+							"025ff689-f131-451a-b58f-cd751de54074",
+							"50604e39-3781-4055-b0f8-7f012f14bd1a"
+						]
+					}
+				]
+			},
+			{
+				"id": "e8a1f734-6001-4c7a-8b8b-1a0a00000005",
+				"part": "5. Vươn mình trong tự chủ - Nâng tầm vị thế",
+				"questions": [
+					{
+						"id": "01c2c47c-8aa4-4b87-a30f-5eb33e2e8302",
+						"followUpIds": [
+							"aba7c45b-32a5-410e-9e73-cf85de8e97ca",
+							"e7f51916-0bba-4542-a7ae-6eb0876b4a08",
+							"ab7f2f70-d0c0-408d-9df1-ea36925e2d27"
+						]
+					},
+					{
+						"id": "51179c80-ae67-44d0-889e-ff673221f9e9",
+						"followUpIds": [
+							"09002d28-f595-4528-8d7e-569f0c5a02d0",
+							"3e11d273-0ac1-424f-8d1f-f306d6d4a17e",
+							"5381825d-d3c6-42c2-b171-07ada4fbd1f7"
+						]
+					},
+					{
+						"id": "c689b443-cfa4-4bdc-9064-625ccd4fe71f",
+						"followUpIds": [
+							"8f3442f7-1f0e-49aa-b520-be0e3e34fc6a",
+							"9b93257e-6f9a-4001-9d7f-ab410f2fb6ac",
+							"05eb94e8-e1eb-405e-9ea2-36f5dbfac1ea"
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "6f63f6a8-36a1-4a26-abd5-933486b3ed75",
+		"chapter": "PHẦN II: DẤU ẤN VÀ GIÁ TRỊ CỐT LÕI",
+		"parts": [
+			{
+				"id": "78207908-16e1-4822-8395-888e235e890c",
+				"part": "1. Khẳng định chất lượng đội ngũ và đổi mới mô hình",
+				"questions": [
+					{
+						"id": "89396e95-7177-49f3-80f4-d621b18cc332",
+						"followUpIds": [
+							"1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+							"2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e",
+							"3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f"
+						]
+					},
+					{
+						"id": "d0f4b301-447a-4933-913a-67507119e078",
+						"followUpIds": [
+							"4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a",
+							"5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b",
+							"6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c"
+						]
+					},
+					{
+						"id": "65b4c48a-8f85-48b2-b062-8e3b12368112",
+						"followUpIds": [
+							"7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d",
+							"8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e",
+							"9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f"
+						]
+					}
+				]
+			},
+			{
+				"id": "97e64177-3331-4040-97b5-0c9f13c6b1d4",
+				"part": "2. Mở rộng quy mô và khẳng định chất lượng đào tạo",
+				"questions": [
+					{
+						"id": "406d408f-2f9a-4f51-9685-64f331776595",
+						"followUpIds": [
+							"0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a",
+							"1e2f3a4b-5c6d-4e7f-8a9b-0c1d2e3f4a5b",
+							"2f3a4b5c-6d7e-4f8a-9b0c-1d2e3f4a5b6c"
+						]
+					},
+					{
+						"id": "890f5b90-1c9c-48be-806b-2c5e533c399b",
+						"followUpIds": [
+							"3a4b5c6d-7e8f-4a9b-0c1d-2e3f4a5b6c7d",
+							"4b5c6d7e-8f9a-4b0c-1d2e-3f4a5b6c7d8e",
+							"5c6d7e8f-9a0b-4c1d-2e3f-4a5b6c7d8e9f"
+						]
+					},
+					{
+						"id": "e2a3c74c-4734-4d16-bd5b-98006240d049",
+						"followUpIds": [
+							"6d7e8f9a-0b1c-4d2e-3f4a-5b6c7d8e9f0a",
+							"7e8f9a0b-1c2d-4e3f-4a5b-6c7d8e9f0a1b",
+							"8f9a0b1c-2d3e-4f4a-5b6c-7d8e9f0a1b2c"
+						]
+					}
+				]
+			},
+			{
+				"id": "f9011e4c-6878-4394-bb9f-368686d639b9",
+				"part": "3. Tăng cường và hiện đại hóa cơ sở vật chất",
+				"questions": [
+					{
+						"id": "bc296f01-f2f2-491a-967b-117562854b41",
+						"followUpIds": [
+							"9a0b1c2d-3e4f-4a5b-6c7d-8e9f0a1b2c3d",
+							"0b1c2d3e-4f5a-4b6c-7d8e-9f0a1b2c3d4e",
+							"1c2d3e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f"
+						]
+					},
+					{
+						"id": "23635338-3165-4235-9008-8e658e454f76",
+						"followUpIds": [
+							"2d3e4f5a-6b7c-4d8e-9f0a-1b2c3d4e5f6a",
+							"3e4f5a6b-7c8d-4e9f-0a1b-2c3d4e5f6a7b",
+							"4f5a6b7c-8d9e-4f0a-1b2c-3d4e5f6a7b8c"
+						]
+					},
+					{
+						"id": "41c888e3-05ef-4d64-817e-389f4f46487e",
+						"followUpIds": [
+							"5a6b7c8d-9e0f-4a1b-2c3d-4e5f6a7b8c9d",
+							"6b7c8d9e-0f1a-4b2c-3d4e-5f6a7b8c9d0e",
+							"7c8d9e0f-1a2b-4c3d-4e5f-6a7b8c9d0e1f"
+						]
+					}
+				]
+			},
+			{
+				"id": "6732f7a1-d779-4670-b196-1896a2d5252b",
+				"part": "4. Đột phá trong phát triển và ứng dụng khoa học - công nghệ",
+				"questions": [
+					{
+						"id": "2da1439f-1736-407b-8451-b84496739343",
+						"followUpIds": [
+							"8d9e0f1a-2b3c-4d4e-5f6a-7b8c9d0e1f2a",
+							"9e0f1a2b-3c4d-4e5f-6a7b-8c9d0e1f2a3b",
+							"0f1a2b3c-4d5e-4f6a-7b8c-9d0e1f2a3b4c"
+						]
+					},
+					{
+						"id": "7e3760ba-1bc4-406c-9418-f02a5cf34731",
+						"followUpIds": [
+							"1a2b3c4d-5e6f-4b7a-8b9c-0d1e2f3a4b5c",
+							"2b3c4d5e-6f7a-4c8b-9c0d-1e2f3a4b5c6d",
+							"3c4d5e6f-7a8b-4d9c-0d1e-2f3a4b5c6d7e"
+						]
+					},
+					{
+						"id": "744927b5-22d7-46f9-ae5b-7b00ca32274d",
+						"followUpIds": [
+							"4d5e6f7a-8b9c-4e0d-1e2f-3a4b5c6d7e8f",
+							"5e6f7a8b-9c0d-4f1e-2f3a-4b5c6d7e8f9a",
+							"6f7a8b9c-0d1e-4a2f-3a4b-5c6d7e8f9a0b"
+						]
+					}
+				]
+			},
+			{
+				"id": "39945070-5b1d-4054-9988-518206d2038b",
+				"part": "5. Hợp tác quốc tế - một động lực mạnh mẽ của sự phát triển và hội nhập",
+				"questions": [
+					{
+						"id": "cc074092-be20-4389-9833-286a11e4034f",
+						"followUpIds": [
+							"7a8b9c0d-1e2f-4b3c-4d5e-6f7a8b9c0d1e",
+							"8b9c0d1e-2f3a-4c4d-5e6f-7a8b9c0d1e2f",
+							"9c0d1e2f-3a4b-4d5e-6f7a-8b9c0d1e2f3a"
+						]
+					},
+					{
+						"id": "2768d6f5-0819-478f-a9b3-dbbaec18f6f5",
+						"followUpIds": [
+							"0d1e2f3a-4b5c-4e6f-7a8b-9c0d1e2f3a4b",
+							"1e2f3a4b-5c6d-4f7a-8b9c-0d1e2f3a4b5c",
+							"2f3a4b5c-6d7e-4a8b-9c0d-1e2f3a4b5c6d"
+						]
+					},
+					{
+						"id": "b328156b-ca82-45e0-8260-eb2125f448ea",
+						"followUpIds": [
+							"3a4b5c6d-7e8f-4b9c-0d1e-2f3a4b5c6d7e",
+							"4b5c6d7e-8f9a-4c0d-1e2f-3a4b5c6d7e8f",
+							"5c6d7e8f-9a0b-4d1e-2f3a-4b5c6d7e8f9a"
+						]
+					}
+				]
+			}
+		]
+	},
+  {
+    "id": "93018813-d68a-4416-88b6-9faadb1f2964",
+    "chapter": "PHẦN I: 55 NĂM - NHỮNG CHẶNG ĐƯỜNG",
+    "part": "1. Viện Đại học Cần Thơ: Đại học vì Đồng bằng, Đồng bằng vì Đại học - Dấu ấn đấu tranh của nhân dân đồng bằng sông Cửu Long",
+    "questions": [
+      {
+        "id": "879bd328-89e0-454e-ad1c-f762691f41d4",
+        "followUpIds": [
+          "c0cca794-1c75-4153-b720-b1855faeadd9",
+          "01c9cdb8-1e42-4a11-a8d5-9915e38b2fe7"
+        ]
+      },
+      {
+        "id": "520b05fe-3157-4374-95fe-41f21c5c1efd",
+        "followUpIds": [
+          "c2caaf69-bebc-45eb-9221-c722ad61879c",
+          "0fcd02f4-18b8-48fd-87aa-2bcd85a86ff2"
+        ]
+      },
+      {
+        "id": "159d1b97-e712-485c-8931-c2172aebb081",
+        "followUpIds": [
+          "0efc5241-1647-4a02-9180-6ad8e832d031",
+          "95f13e2c-c0bf-49b4-ae9c-104055899548"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "788773b0-40ec-4236-aee6-399fa7239bf6",
+    "chapter": "PHẦN I: 55 NĂM - NHỮNG CHẶNG ĐƯỜNG",
+    "part": "2. Trường Đại học Cần Thơ vững vàng đi lên trong gian khó (1975-1990)",
+    "questions": [
+      {
+        "id": "0117bb7c-f926-4173-8ad6-9990cfe443e7",
+        "followUpIds": [
+          "981014e1-a461-44b3-89ff-69c8bc9ccb16",
+          "5ebde520-0370-4816-a869-b3a760873740"
+        ]
+      },
+      {
+        "id": "3dc4e127-5db4-4ac5-b747-d382c1aa56c7",
+        "followUpIds": [
+          "867836bf-58cb-4e87-be16-01bc3bc20642",
+          "317898f0-98a6-4a5e-b745-8f1e5331a384"
+        ]
+      },
+      {
+        "id": "13ab56e0-2ad6-4dbf-b678-e4c637b00124",
+        "followUpIds": [
+          "31916a42-7545-4e77-a8b5-16c154d1f51f",
+          "cf6dcec1-7fdb-4a02-b2f9-7ec9b0fc65b2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ac0e17f4-feb5-452e-8864-063c59116062",
+    "chapter": "PHẦN I: 55 NĂM - NHỮNG CHẶNG ĐƯỜNG",
+    "part": "3. Trường Đại học Cần Thơ giai đoạn 1990-2007 - Đổi mới và hội nhập quốc tế",
+    "questions": [
+      {
+        "id": "99e4fe48-5ba2-4f08-b9d5-8c2539fd3720",
+        "followUpIds": [
+          "bf870345-2f24-4f13-93c8-d222e695cfd3",
+          "b003f0bb-1683-4397-a94b-925a7b74d784"
+        ]
+      },
+      {
+        "id": "0ce5f9cd-b0c4-4012-b6d3-a27b4c63d9db",
+        "followUpIds": [
+          "77af9efc-f8e0-4b08-870f-55000906dbc4",
+          "f8aa1613-7f3c-4641-85b8-cd41450871c4"
+        ]
+      },
+      {
+        "id": "89f8f6f5-0c15-401b-8bf1-66c6bdfe9eef",
+        "followUpIds": [
+          "9e91bc94-6299-4bf3-a0fd-c1fe1d67c824",
+          "f7bc18bf-ad7d-4280-885f-ba69bc207324"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a47c1275-e514-42dc-a736-7de9d759990d",
+    "chapter": "PHẦN II: NHỮNG HỒI ỨC VÀ KỶ NIỆM SÂU SẮC",
+    "part": "1. Những mẩu chuyện về Bác Bảy Phạm Sơn Khai - Vị Hiệu trưởng đầu tiên của Trường Đại học Cần Thơ",
+    "questions": [
+      {
+        "id": "8f473e86-817e-4622-bdff-2a69ba3dd146",
+        "followUpIds": [
+          "fcbbc196-2a2c-469d-9bf6-7f5f4307a826",
+          "67fb770b-9bf2-405b-9bf4-ddfdc4cd0b11"
+        ]
+      },
+      {
+        "id": "0fb16008-05e1-4115-a1b5-56b97f421e2a",
+        "followUpIds": [
+          "55195cbf-b14b-498b-a051-9c05cb7c0341",
+          "2e1768cd-08ce-4582-85c9-e30085f8023c"
+        ]
+      },
+      {
+        "id": "15d0b343-6f16-4ca6-a9a6-e6bf631094a1",
+        "followUpIds": [
+          "1fd68fa6-cbf8-46bc-a316-abba3d4db003",
+          "d1681916-e36c-468a-aa9d-6972d33819f0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c75b9486-d8b1-4f5d-a32a-40807ed3f293",
+    "chapter": "PHẦN II: NHỮNG HỒI ỨC VÀ KỶ NIỆM SÂU SẮC",
+    "part": "2. Những đổi mới ngoạn mục của Trường Đại học Cần Thơ và ấn tượng về Hiệu trưởng Trần Phước Đường",
+    "questions": [
+      {
+        "id": "7c47b751-9221-411e-aedb-9cd579035759",
+        "followUpIds": [
+          "b43f1eee-1473-4bd0-8163-444a20c19fdc",
+          "64e00fa1-a6c4-42b0-bd0e-cf249d628e16"
+        ]
+      },
+      {
+        "id": "7a3698b5-9867-44dc-a575-b3e15f604d7d",
+        "followUpIds": [
+          "8d786902-88ed-4bdd-9a62-2338465c2b85",
+          "dd773470-c19e-44af-ac93-2911ac8975cb"
+        ]
+      },
+      {
+        "id": "7f82f115-3d11-4ebc-9aaa-13cf58418795",
+        "followUpIds": [
+          "b9588276-d124-4c2e-8894-f9891c93c3f4",
+          "445d6004-644e-445b-888c-e8855d7d1ddc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3b14621c-8fde-4749-9bef-433c1387b816",
+    "chapter": "PHẦN III: 55 SỰ KIỆN VÀ DẤU ẤN ĐÁNG NHỚ",
+    "part": "Sự thay đổi của Viện/Trường Đại học Cần Thơ đáp ứng yêu cầu phát triển và thực hiện vai trò đối với xã hội",
+    "questions": [
+      {
+        "id": "7168cfb2-f32d-4fb5-af18-c4346c598ce7",
+        "followUpIds": [
+          "549fb7db-c1b0-4f64-8288-6565ab8b95a3",
+          "452c4435-2ad2-4d66-91ff-5ffc75b95b66"
+        ]
+      },
+      {
+        "id": "170616b8-5490-44db-bf65-a18addc1fb94",
+        "followUpIds": [
+          "35c35418-b02c-4b88-9a2f-1b7a028d202b",
+          "f40c006f-a59f-46cc-bdf3-1e5128e2606b"
+        ]
+      },
+      {
+        "id": "07a7bf00-3ce4-4482-a9b6-cea759da8a1e",
+        "followUpIds": [
+          "6dd18494-97a9-4e1b-844a-d1ccd703aa8e",
+          "67d2c38c-8f03-47bb-aa1e-5491457f41a3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "460e57c1-3666-4c20-a482-b07f4fa2671a",
+    "chapter": "PHẦN III: 55 SỰ KIỆN VÀ DẤU ẤN ĐÁNG NHỚ",
+    "part": "Những thay đổi quan trọng về tổ chức, nhân sự và quản trị đáp ứng xu hướng phát triển mới",
+    "questions": [
+      {
+        "id": "59b2127d-f15c-47c5-ad29-50642eca24e1",
+        "followUpIds": [
+          "b4684348-768f-4271-a2e5-c95b741c1261",
+          "518067d7-fce9-428a-a7c9-e7d0f3eec57f"
+        ]
+      },
+      {
+        "id": "b2d46012-1750-434d-bce7-40cbb2c69560",
+        "followUpIds": [
+          "bdb66281-02e4-4e11-88cd-feb4a59b36ea",
+          "69270719-91db-4b67-bde9-767d2463f287"
+        ]
+      },
+      {
+        "id": "7c6089b3-d706-4303-a90e-c3cd442fe69b",
+        "followUpIds": [
+          "9d85fd37-0950-4066-ab49-b46cd1c02953",
+          "0544f082-93bb-4df5-bb4e-d4b97a323805"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7ed7759d-cf1b-4347-b6ae-75f032f3c940",
+    "chapter": "PHẦN III: 55 SỰ KIỆN VÀ DẤU ẤN ĐÁNG NHỚ",
+    "part": "Những đột phá về đào tạo đáp ứng nhu cầu hội nhập",
+    "questions": [
+      {
+        "id": "640caff9-7f28-45a8-b7bb-ca424cea9b27",
+        "followUpIds": [
+          "c622bba9-5c8d-4d5c-9115-432b2b1963c2",
+          "0ca371ab-8923-4e56-a7c0-8d1a0bbad843"
+        ]
+      },
+      {
+        "id": "ce5eb864-a0a3-4f5b-82d9-33a564338127",
+        "followUpIds": [
+          "488f69a6-4ae7-46ef-8fdd-dfe7785bc5f5",
+          "9c5685e6-f0d9-4a33-949d-bccbe931c1ea"
+        ]
+      },
+      {
+        "id": "dff00b55-d5a6-42fb-b0dd-45d93d3b29db",
+        "followUpIds": [
+          "dc009563-7251-42c4-9006-20f234f61200",
+          "7a27398a-617b-4ad7-ab2e-c89e8733669a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d39495f6-16ab-421b-8924-f70d4ba73857",
+    "chapter": "PHẦN III: 55 SỰ KIỆN VÀ DẤU ẤN ĐÁNG NHỚ",
+    "part": "Những sự kiện và dấu ấn đánh dấu thành tựu khoa học và công nghệ",
+    "questions": [
+      {
+        "id": "f0fc5729-67e8-4b2f-bb11-860a3e454964",
+        "followUpIds": [
+          "63d23591-db14-4aec-b34b-539b62170055",
+          "1e55d87e-e08b-41a7-b87d-2c68b0f2595e"
+        ]
+      },
+      {
+        "id": "28838770-8569-4ca0-905b-141e87da0ee7",
+        "followUpIds": [
+          "464228d2-95af-41a2-bc57-2db311eb25cf",
+          "07d26b58-80bc-4b4f-8575-8e78e9c29771"
+        ]
+      },
+      {
+        "id": "9977eebb-cc60-4b88-a550-2634141c459b",
+        "followUpIds": [
+          "4cc90015-0482-46a6-afb0-866426b26f74",
+          "8a97b505-6fac-4af2-99bc-35bc00e90f4e"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "092545ff-3802-4a4a-a0fb-bfe51d9c035e",
+    "chapter": "PHẦN III: 55 SỰ KIỆN VÀ DẤU ẤN ĐÁNG NHỚ",
+    "part": "Hợp tác quốc tế nâng cao vị thế Trường Đại học Cần Thơ",
+    "questions": [
+      {
+        "id": "563442f8-ee6d-46fd-a8b9-e0cc3e0439fd",
+        "followUpIds": [
+          "d2ebb502-0b56-4aea-a95f-8cd1e3195a67",
+          "9441cbbb-14f7-43f1-833f-fbafaf8db3cb"
+        ]
+      },
+      {
+        "id": "820b2c79-5321-4037-8b1b-f742feeb1ead",
+        "followUpIds": [
+          "6498d2a7-4640-4b4b-9d38-8b4399dfbbcf",
+          "8e4a278c-6d76-41e6-bc05-423d9406b6bd"
+        ]
+      },
+      {
+        "id": "544a3d62-a5a6-410d-a15b-ebc937b0354b",
+        "followUpIds": [
+          "c46a020d-b881-4b09-b76b-07d88953ed9e",
+          "9161b2e4-74af-4004-9d50-baf47f7fda5c"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4be54265-6c5d-4cf8-bdaf-b75a2c2a090d",
+    "chapter": "PHẦN III: 55 SỰ KIỆN VÀ DẤU ẤN ĐÁNG NHỚ",
+    "part": "Những công trình tạo ấn tượng sâu sắc",
+    "questions": [
+      {
+        "id": "153d7cd6-72a2-4dd1-b9b8-480d7ed3edf6",
+        "followUpIds": [
+          "7a55ba6c-586f-4883-b957-71288a121c3b",
+          "b9196f4a-86ee-4876-b758-0d2de0557a7b"
+        ]
+      },
+      {
+        "id": "4ffe177d-70e1-441d-98d8-68abe58c56f4",
+        "followUpIds": [
+          "8d7fd1c0-46f8-473c-a939-6955e4334907",
+          "df1ddb45-19a4-4142-a0ac-64b71a4ad0d4"
+        ]
+      },
+      {
+        "id": "df15e7c2-01c8-4bbf-aea9-fb5676983a24",
+        "followUpIds": [
+          "cad3447d-0536-4eeb-8992-ce4fbc5e695c",
+          "512e3746-1286-4d24-b061-32ee7209ff46"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5b462458-9334-4817-9999-ee84f7d0ceb0",
+    "chapter": "PHẦN III: 55 SỰ KIỆN VÀ DẤU ẤN ĐÁNG NHỚ",
+    "part": "Danh hiệu và phẩn thưởng cao quý",
+    "questions": [
+      {
+        "id": "0117646c-fb0c-48b0-9fb8-62f6d92948e5",
+        "followUpIds": [
+          "cdf16f7b-1eed-4c73-8755-37a5ad05ca4c",
+          "9fd6dbfc-c1f2-4282-8f83-893effaf9adb"
+        ]
+      },
+      {
+        "id": "5475e080-203a-463b-a147-0d5bbf9f9600",
+        "followUpIds": [
+          "724fb577-3403-473a-aaa6-2559bc6c239d",
+          "1b136dcf-56df-49e5-ab00-8aeacfbd2f68"
+        ]
+      },
+      {
+        "id": "748809d1-014d-4004-a25a-ee58a3963791",
+        "followUpIds": [
+          "f6576b88-c43c-4c14-89f7-89b79e141a37",
+          "27ad1e2c-38e9-4bc4-9404-0722cc70fe9d"
+        ]
+      }
+    ]
+  }
+]

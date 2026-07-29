@@ -1,0 +1,18 @@
+services:
+  ctu-context-search-api:
+    container_name: ctu-context-search-api
+    image: ctu-context-search-api:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8112:8000"
+    env_file:
+      - .env
+    volumes:
+      - hf_cache:/hf_cache
+    environment:
+      - HF_HOME=/hf_cache
+
+volumes:
+  hf_cache:

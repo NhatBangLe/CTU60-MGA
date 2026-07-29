@@ -1,0 +1,13 @@
+langchain
+langchain-community
+langchain-text-splitters
+sentence-transformers
+underthesea
+chromadb
+docling
+easyocr
+openai
+
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.10.0
+torchvision==0.25.0

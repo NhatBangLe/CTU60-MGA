@@ -1,0 +1,43 @@
+# Git
+.git
+.gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Documentation
+*.md
+
+# Testing
+.pytest_cache/
+tests/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Exclude subdirectories in data
+data/*/
+
+# Except root-level files in data (JSON and txt files)
+!data/*.json
+!data/*.txt

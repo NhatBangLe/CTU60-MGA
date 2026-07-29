@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Data folder
+data/*/
+!data/*.json
+!data/*.txt
+
+# Environment config
+.env
+
+# Documentations
+*.md
+!README.md
+
+# Workspace settings
+.vscode
+.gitnexus
+
+chroma_data/
