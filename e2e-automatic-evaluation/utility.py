@@ -27,7 +27,7 @@ class DatasetAnalyzer:
 
     def get_expected_route_statistics(self) -> dict[str, dict[str, float]]:
         """Compute counts and percentages grouped by expected_route."""
-        return self._compute_stats(self.dataset["expected_route"])
+        return self._compute_stats([item["expected_route"] for item in self.dataset["output"]])
 
     def get_language_statistics(self) -> dict[str, dict[str, float]]:
         """Compute counts and percentages grouped by language."""
