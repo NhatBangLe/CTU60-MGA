@@ -33,10 +33,17 @@ class TestInput(BaseModel):
     has_input_image: bool = Field(..., description="Whether an input image is attached")
 
 
+class TestExpectedOutput(BaseModel):
+    expected_route: RouteType
+    expected_answer: Optional[str] = Field(
+        default=None, description="Expected answer if route is TEXT_ONLY"
+    )
+
+
 class TestCase(BaseModel):
     """Complete record structure for a single dataset entry."""
 
     id: str = Field(..., description="Unique test case ID (e.g., 'route_test_001')")
     metadata: TestMetadata
     input: TestInput
-    expected_route: RouteType
+    output: TestExpectedOutput
