@@ -155,6 +155,9 @@ Return ONLY a JSON array of indices (e.g., [2, 0, 1, 3]), ordered from most rele
         hybrid_results.sort(key=lambda x: x.combined_score, reverse=True)
         logger.debug(f"Hybrid search returned {len(hybrid_results)} results")
 
+        if not config.LLM_RERANK_ENABLED:
+            return hybrid_results[:top_k]
+
         candidate_results = hybrid_results[: top_k * config.LLM_RERANK_MULTIPLIER]
         reranked = self.rerank_with_llm(query, candidate_results)
         return reranked[:top_k]

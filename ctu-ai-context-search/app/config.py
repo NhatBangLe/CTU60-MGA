@@ -18,6 +18,7 @@ class Config:
     EMBEDDING_MODEL_NAME: str = os.environ.get("EMBEDDING_MODEL_NAME", "Qwen/Qwen3-Embedding-0.6B")
 
     HYBRID_SEARCH_MULTIPLIER: int = int(os.environ.get("HYBRID_SEARCH_MULTIPLIER", "100"))
+    LLM_RERANK_ENABLED: bool = os.environ.get("LLM_RERANK_ENABLED", "true").lower() in ("1", "true", "yes")
     LLM_RERANK_MULTIPLIER: int = int(os.environ.get("LLM_RERANK_MULTIPLIER", "2"))
 
     DEFAULT_CHUNK_SIZE: int = 1000
