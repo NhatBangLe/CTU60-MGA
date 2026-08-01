@@ -14,7 +14,7 @@ from datasets import load_dataset
 
 from app.config import config
 from app.eval.metrics import f1_at_k, mrr, ndcg_at_k, precision_at_k, recall_at_k
-from app.services.hybrid_search import reciprocal_rank_fusion
+from app.services.hybrid_search import reciprocal_rank_fusion, rerank_with_llm
 from app.services.keyword_search import KeywordSearch
 from app.services.semantic_search import SemanticSearch
 from app.utils.bm25_indexer import BM25Indexer
@@ -38,7 +38,12 @@ VIQUAD_ANSWER_START_RE = re.compile(
 )
 
 SUBSET_CONFIG = {
-    "BKAI_RAG": {"context_field": "context", "is_list": True},
+    "BKAI_RAG": {
+        "context_field": "context",
+        "is_list": True,
+        "chunk_chars": LEGALRAG_CHUNK_CHARS,
+        "chunk_overlap_chars": LEGALRAG_CHUNK_OVERLAP_CHARS,
+    },
     "LegalRAG": {
         "context_field": "context",
         "is_list": True,
@@ -224,9 +229,27 @@ def get_context_items(row: dict, subset: str) -> list[str]:
     return [str(val)]
 
 
+def _answer_source_context(row: dict, subset: str) -> list[str]:
+    answer = str(row.get("answer", "")).strip()
+    items = get_context_items(row, subset)
+    if not answer or not items:
+        return []
+    answer_words = {w for w in re.split(r"\W+", answer.lower()) if len(w) > 1}
+    if not answer_words:
+        return []
+    scores = [
+        sum(1 for w in answer_words if w in set(re.split(r"\W+", ctx.lower())))
+        for ctx in items
+    ]
+    best = max(range(len(items)), key=scores.__getitem__)
+    return [items[best]]
+
+
 def get_relevant_context_items(row: dict, subset: str) -> list[str]:
     if subset != "viQuAD":
-        return get_context_items(row, subset)
+        # ponytail: heuristic gold label (max answer-word overlap); the dataset
+        # has no explicit source-passage labels for LegalRAG/BKAI_RAG
+        return _answer_source_context(row, subset)
 
     if is_unanswerable(row):
         return []
@@ -361,12 +384,16 @@ def create_collection_name(subset: str) -> str:
     return f"eval_{get_subset_output_name(subset)}"
 
 
-def default_generation_cache_path(subset: str) -> Path:
-    return Path("reports") / f"{subset}.json"
+def default_generation_cache_path(subset: str, rerank: bool = False) -> Path:
+    suffix = "_rerank" if rerank else ""
+    return Path("reports") / f"{subset}{suffix}.json"
 
 
-def default_metrics_output_path(subset: str, mode: str, sample: Optional[int]) -> Path:
-    return Path("reports") / f"{subset}.csv"
+def default_metrics_output_path(
+    subset: str, mode: str, sample: Optional[int], rerank: bool = False
+) -> Path:
+    suffix = "_rerank" if rerank else ""
+    return Path("reports") / f"{subset}{suffix}.csv"
 
 
 def default_details_output_path(subset: str, mode: str, sample: Optional[int]) -> Path:
@@ -539,7 +566,13 @@ def map_retrieved_to_parent_ids(
     return mapped
 
 
-def run_strategies(query: str, temp_name: str, top_k: int):
+def run_strategies(
+    query: str,
+    temp_name: str,
+    top_k: int,
+    rerank: bool = False,
+    rerank_candidates: Optional[int] = None,
+):
     sem_results = SemanticSearch.get_instance().search(query, temp_name, top_k=top_k)
     kw_results = KeywordSearch.get_instance().search(query, temp_name, top_k=top_k)
 
@@ -548,6 +581,13 @@ def run_strategies(query: str, temp_name: str, top_k: int):
 
     rrf_scores = reciprocal_rank_fusion([sem_ids, kw_ids])
     hybrid_ids = sorted(rrf_scores.keys(), key=lambda x: rrf_scores[x], reverse=True)
+
+    if rerank and rerank_candidates:
+        head, tail = hybrid_ids[:rerank_candidates], hybrid_ids[rerank_candidates:]
+        doc_lookup = {r.id: r.document for r in sem_results}
+        doc_lookup.update({r.id: r.document for r in kw_results})
+        order = rerank_with_llm(query, [doc_lookup.get(i, "") for i in head])
+        hybrid_ids = [head[i] for i in order] + tail
 
     return {"semantic": sem_ids, "bm25": kw_ids, "hybrid": hybrid_ids}
 
@@ -880,11 +920,16 @@ def postprocess_retrieval_metrics(
     strategies: list[str],
     output_path: Optional[Path] = None,
     generation_cache_path: Optional[Path] = None,
+    rerank: bool = False,
 ) -> None:
     output_path = ensure_csv_path(
-        output_path or default_metrics_output_path(subset, "generation", None)
+        output_path
+        or default_metrics_output_path(subset, "generation", None, rerank=rerank)
     )
-    generation_cache_path = generation_cache_path or default_generation_cache_path(subset)
+    generation_cache_path = (
+        generation_cache_path
+        or default_generation_cache_path(subset, rerank=rerank)
+    )
 
     if not generation_cache_path.exists():
         raise FileNotFoundError(

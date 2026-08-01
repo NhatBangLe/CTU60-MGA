@@ -58,37 +58,8 @@ class HybridSearch:
         if len(results) <= 1:
             return results
 
-        llm = self.get_llm()
-
-        docs_text = "\n\n".join(
-            f"[{i}] {r.document[:500]}" for i, r in enumerate(results)
-        )
-
-        prompt = f"""Given the search query: "{query}"
-
-Rank the following documents by relevance to this query. Consider both semantic meaning and keyword matching. Return the document indices in order of relevance, most relevant first.
-
-Documents:
-{docs_text}
-
-Return ONLY a JSON array of indices (e.g., [2, 0, 1, 3]), ordered from most relevant to least relevant. Include all indices."""
-
-        try:
-            response = llm.generate(prompt)
-
-            match = re.search(r"\[.*\]", response)
-            if match:
-                rankings = json.loads(match.group())
-                if isinstance(rankings, list) and all(
-                    isinstance(i, int) for i in rankings
-                ):
-                    reranked = [results[i] for i in rankings if 0 <= i < len(results)]
-                    missing = [r for r in results if r not in reranked]
-                    return reranked + missing
-        except Exception as e:
-            logger.warning(f"LLM reranking failed: {e}")
-
-        return results
+        order = rerank_with_llm(query, [r.document for r in results])
+        return [results[i] for i in order]
 
     def search(
         self,
@@ -161,6 +132,44 @@ Return ONLY a JSON array of indices (e.g., [2, 0, 1, 3]), ordered from most rele
         candidate_results = hybrid_results[: top_k * config.LLM_RERANK_MULTIPLIER]
         reranked = self.rerank_with_llm(query, candidate_results)
         return reranked[:top_k]
+
+
+def rerank_with_llm(query: str, doc_texts: list[str]) -> list[int]:
+    """Return indices of doc_texts ordered most-relevant-first by LLM judgment.
+
+    On any failure, returns the original order. Shared by the service and eval.
+    """
+    n = len(doc_texts)
+    if n <= 1:
+        return list(range(n))
+
+    docs_text = "\n\n".join(f"[{i}] {t[:500]}" for i, t in enumerate(doc_texts))
+
+    prompt = f"""Given the search query: "{query}"
+
+Rank the following documents by relevance to this query. Consider both semantic meaning and keyword matching. Return the document indices in order of relevance, most relevant first.
+
+Documents:
+{docs_text}
+
+Return ONLY a JSON array of indices (e.g., [2, 0, 1, 3]), ordered from most relevant to least relevant. Include all indices."""
+
+    try:
+        response = LLMClient().generate(prompt)
+
+        match = re.search(r"\[.*\]", response)
+        if match:
+            rankings = json.loads(match.group())
+            if isinstance(rankings, list) and all(
+                isinstance(i, int) for i in rankings
+            ):
+                valid = [i for i in rankings if 0 <= i < n]
+                seen = set(valid)
+                return valid + [i for i in range(n) if i not in seen]
+    except Exception as e:
+        logger.warning(f"LLM reranking failed: {e}")
+
+    return list(range(n))
 
 
 def min_max_normalize(scores: dict[str, float]) -> dict[str, float]:

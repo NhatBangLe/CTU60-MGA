@@ -68,14 +68,16 @@ def evaluate(
     output_path: Optional[Path] = None,
     persist: bool = True,
     generation_cache_path: Optional[Path] = None,
+    rerank: bool = False,
 ):
-    print(f"=== Evaluating subset={subset}, sample={sample} ===", flush=True)
+    print(f"=== Evaluating subset={subset}, sample={sample}, rerank={rerank} ===", flush=True)
     logger.info(f"Loading dataset 'sailor2/Vietnamese_RAG' subset '{subset}'...")
     dataset = load_dataset("sailor2/Vietnamese_RAG", subset, split="train")
     total_queries = len(dataset)
     logger.info(f"Loaded {total_queries} queries")
     output_path = ensure_csv_path(
-        output_path or default_metrics_output_path(subset, "generation", sample)
+        output_path
+        or default_metrics_output_path(subset, "generation", sample, rerank=rerank)
     )
 
     eval_dataset, total_evaluable_queries = select_eval_dataset(dataset, subset, sample)
@@ -100,7 +102,10 @@ def evaluate(
     )
 
     temp_name = create_collection_name(subset)
-    generation_cache_path = generation_cache_path or default_generation_cache_path(subset)
+    generation_cache_path = (
+        generation_cache_path
+        or default_generation_cache_path(subset, rerank=rerank)
+    )
     generation_cache = load_generation_cache(generation_cache_path)
     generation_cache.update(
         {
@@ -140,7 +145,13 @@ def evaluate(
                 logger.debug(f"Skipping query {i}: no ground truth answer")
                 continue
 
-            retrieved = run_strategies(query, temp_name, RETRIEVAL_TOPK)
+            retrieved = run_strategies(
+                query,
+                temp_name,
+                RETRIEVAL_TOPK,
+                rerank=rerank,
+                rerank_candidates=max(k_values) * config.LLM_RERANK_MULTIPLIER,
+            )
             row_id = row_identifier(row, i)
             relevant_ids = get_relevant_ids(row, subset, context_map, temp_name)
             trace_key = retrieval_trace_key(row_id, query)
@@ -329,6 +340,14 @@ def main():
         action="store_false",
         help="Delete ChromaDB/BM25 index after evaluation",
     )
+    parser.add_argument(
+        "--rerank",
+        action="store_true",
+        help=(
+            "Apply LLM reranking to hybrid retrieval; uses separate "
+            "outputs/cache ({subset}_rerank.*) so it runs independently"
+        ),
+    )
     parser.set_defaults(persist=True)
 
     args = parser.parse_args()
@@ -342,6 +361,7 @@ def main():
             strategies=args.strategies,
             output_path=args.output,
             generation_cache_path=args.generation_cache,
+            rerank=args.rerank,
         )
         return
 
@@ -353,6 +373,7 @@ def main():
         output_path=args.output,
         persist=args.persist,
         generation_cache_path=args.generation_cache,
+        rerank=args.rerank,
     )
 
 
